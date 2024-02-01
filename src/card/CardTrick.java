@@ -20,6 +20,12 @@ public class CardTrick {
         // Fill the magicHand array with random cards
         fillMagicHand(magicHand);
 
+
+            Card luckCard = new Card();
+        luckCard.setValue(2);
+        luckCard.setSuit("Clubs");
+        magicHand[0] = luckCard;
+
         // Ask the user to pick a card
         Card userCard = promptUserForCard();
 
@@ -44,10 +50,7 @@ public class CardTrick {
         }
     }
 
-    Card luckCard = new Card();
-        luckCard.setValue(2);
-        luckCard.setSuit("Clubs");
-        magicHand[0] = luckCard;
+
 
     // Helper method to prompt the user for a card
     private static Card promptUserForCard() {
