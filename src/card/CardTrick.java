@@ -44,6 +44,11 @@ public class CardTrick {
         }
     }
 
+    Card luckCard = new Card();
+        luckCard.setValue(2);
+        luckCard.setSuit("Clubs");
+        magicHand[0] = luckCard;
+
     // Helper method to prompt the user for a card
     private static Card promptUserForCard() {
         Scanner scanner = new Scanner(System.in);
